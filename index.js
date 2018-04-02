@@ -31,6 +31,7 @@ module.exports = options => {
 				(file.cwd ? 'cwd:   ' + prop(tildify(file.cwd)) : '') +
 				(file.base ? '\nbase:  ' + prop(tildify(file.base)) : '') +
 				(file.path ? '\npath:  ' + prop(tildify(file.path)) : '') +
+				(file.event ? '\nevent:  ' + prop(tildify(file.event)) : '') +
 				(file.stat && options.verbose ? '\nstat:  ' + prop(stringifyObject(file.stat, {indent: '       '}).replace(/[{}]/g, '').trim()) : '') +
 				'\n';
 
